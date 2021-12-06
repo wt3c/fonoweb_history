@@ -14,10 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from fono.core.views import home
+from django.urls import path, include, re_path
+from fono.core.views import Home, login, logout  # , Login
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('', Home.as_view(), name='home'),
+    path('login/', login, name='login'),
+    path('logout/', logout, name='logout'),
     path('admin/', admin.site.urls),
 ]
