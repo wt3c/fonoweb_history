@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'fono.core',
-    'fono.titular',
+    'fono.holders',
 ]
 
 # INTERNAL_APPS = ['core']
