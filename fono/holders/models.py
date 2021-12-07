@@ -8,7 +8,7 @@ class Holder(models.Model):
     ]
 
     name = models.CharField('Nome', max_length=100)
-    cod_ecad = models.IntegerField('Cód.ECAD', null=True)
+    cod_ecad = models.IntegerField('Cód.ECAD', blank=True, null=True)
     type_doc = models.CharField('Tipo Pessoa', max_length=1, choices=TP_PESSOA, default='F')
     # TODO: Criar validators para CPF e CNPJ
     # cpf = models.CharField('CPF', max_length=11, validators=[validate_cpf])
