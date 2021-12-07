@@ -1,24 +1,15 @@
-from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import View, TemplateView
-from django.views.generic.edit import FormView
+from django.views.generic import CreateView
 
 from .forms import HoldersForm
+from .models import Holder
 
 
-class New(LoginRequiredMixin, FormView):
+class HolderCreate(LoginRequiredMixin, CreateView):
     template_name = 'holders/holders_form.html'
     login_url = 'login'
     form_class = HoldersForm
-    success_url = '/new/'
+    model = Holder
 
     def form_valid(self, form):
         return super().form_valid(form)
-#
-#
-# class New(LoginRequiredMixin, TemplateView):
-#     template_name = 'holders/holders_form.html'
-#     login_url = 'login'
-#
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)

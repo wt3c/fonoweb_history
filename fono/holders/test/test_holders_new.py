@@ -14,7 +14,7 @@ class HolderNew(TestCase):
             last_name="BlackThorne"
         )
         self.client.force_login(self.user)
-        self.resp = self.client.get(r('holders:new'))
+        self.resp = self.client.get(r('holder:new'))
 
     def test_get(self):
         """Get /titular/ must return status code 200"""

@@ -21,6 +21,6 @@ urlpatterns = [
     path('', Home.as_view(), name='home'),
     path('login/', login, name='login'),
     path('logout/', logout, name='logout'),
-    path('titulares', include('fono.holders.urls')),
+    path('titular', include('fono.holders.urls')),
     path('admin/', admin.site.urls),
 ]

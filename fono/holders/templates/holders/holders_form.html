@@ -1,10 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+    <section>
+        <div class="content row padding-bottom-3 desktop-12 container">
+            <h1>Titular</h1>
+            <div class="desktop-6">
+                <form action="{% url 'holder:new' %}" novalidate method="POST">
+                    {% csrf_token %}
 
-</body>
-</html>
+                    {{ form.non_field_errors }}
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.cod_ecad.id_for_label }}"> {{ form.cod_ecad.label }}</label>
+                        {{ form.cod_ecad.errors }}
+                        {{ form.cod_ecad }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.name.id_for_label }}"> {{ form.name.label }}</label>
+                        {{ form.name.errors }}
+                        {{ form.name }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.type_doc.id_for_label }}"> {{ form.type_doc.label }}</label>
+                        {{ form.type_doc.errors }}
+                        {{ form.type_doc }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.cpf.id_for_label }}"> {{ form.cpf.label }}</label>
+                        {{ form.cpf.errors }}
+                        {{ form.cpf }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.cnpj.id_for_label }}"> {{ form.cnpj.label }}</label>
+                        {{ form.cnpj.errors }}
+                        {{ form.cnpj }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.ifpi.id_for_label }}"> {{ form.ifpi.label }}</label>
+                        {{ form.ifpi.errors }}
+                        {{ form.ifpi }}
+                    </div>
+
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.radical_ifpi.id_for_label }}"> {{ form.radical_ifpi.label }}</label>
+                        {{ form.radical_ifpi.errors }}
+                        {{ form.radical_ifpi }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.is_editora.id_for_label }}"> {{ form.is_editora.label }}</label>
+                        {{ form.is_editora.errors }}
+                        {{ form.is_editora }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.is_produtor_fono.id_for_label }}"> {{ form.is_produtor_fono.label }}</label>
+                        {{ form.is_produtor_fono.errors }}
+                        {{ form.is_produtor_fono }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.is_interprete.id_for_label }}"> {{ form.is_interprete.label }}</label>
+                        {{ form.is_interprete.errors }}
+                        {{ form.is_interprete }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.is_autor.id_for_label }}"> {{ form.is_autor.label }}</label>
+                        {{ form.is_autor.errors }}
+                        {{ form.is_autor }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.is_musico.id_for_label }}"> {{ form.is_musico.label }}</label>
+                        {{ form.is_musico.errors }}
+                        {{ form.is_musico }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.is_deleted.id_for_label }}"> {{ form.is_deleted.label }}</label>
+                        {{ form.is_deleted.errors }}
+                        {{ form.is_deleted }}
+                    </div>
+                    <div class="form-row label-block input-text">
+                        <label for="{{ form.observacao.id_for_label }}"> {{ form.observacao.label }}</label>
+                        {{ form.observacao.errors }}
+                        {{ form.observacao }}
+                    </div>
+
+                    <p class="btn-row"><input type="submit" value="Enviar!"/></p>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+{% endblock content %}
