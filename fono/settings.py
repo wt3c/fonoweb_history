@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
+    'test_without_migrations',
+    # Apps
     'fono.core',
     'fono.holders',
 ]
