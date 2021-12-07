@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from fono.holders.forms import HoldersForm
 
 
-class HolderNew(TestCase):
+class HolderNewTest(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(
             username="blackthorne@gmail.com",
