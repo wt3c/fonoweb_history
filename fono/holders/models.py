@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.shortcuts import resolve_url as r
 
 class Holder(models.Model):
     TP_PESSOA = [
@@ -9,7 +9,7 @@ class Holder(models.Model):
 
     name = models.CharField('Nome', max_length=100)
     cod_ecad = models.IntegerField('Cód.ECAD', null=True)
-    type_doc = models.CharField('TP_Pessoa', max_length=1, choices=TP_PESSOA, default='FÍSICA')
+    type_doc = models.CharField('Tipo Pessoa', max_length=1, choices=TP_PESSOA, default='F')
     # TODO: Criar validators para CPF e CNPJ
     # cpf = models.CharField('CPF', max_length=11, validators=[validate_cpf])
     cpf = models.CharField('CPF', max_length=11, blank=True)
@@ -30,3 +30,6 @@ class Holder(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return r('holder:new')

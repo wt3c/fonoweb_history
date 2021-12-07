@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import New
+from .views import HolderCreate
 
-app_name = 'holders'
+app_name = 'holder'
 urlpatterns = [
-    path('', New.as_view(), name='new')
+    path('', HolderCreate.as_view(), name='new')
 ]
