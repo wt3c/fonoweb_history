@@ -25,8 +25,8 @@ class Holder(models.Model):
     observacao = models.TextField('OBSERVAÇÃO', blank=True)
 
     class Meta:
-        verbose_name = 'Titular'
-        verbose_name_plural = 'Titulares'
+        verbose_name = 'titular'
+        verbose_name_plural = 'titulares'
 
     def __str__(self):
         return self.name
