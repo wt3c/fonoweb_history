@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.shortcuts import resolve_url as r
 from django.contrib.auth.models import User
-from fono.holders.forms import HoldersForm
+from fono.holders.forms import HolderForm
 
 
 class HolderNewTest(TestCase):
@@ -26,4 +26,4 @@ class HolderNewTest(TestCase):
 
     def test_has_form(self):
         form = self.resp.context['form']
-        self.assertIsInstance(form, HoldersForm)
+        self.assertIsInstance(form, HolderForm)

@@ -7,6 +7,8 @@
                 <form action="{% url 'holder:new' %}" novalidate method="POST">
                     {% csrf_token %}
 
+                    {{ user }}
+
                     {{ form.non_field_errors }}
                     <div class="form-row label-block input-text">
                         <label for="{{ form.cod_ecad.id_for_label }}"> {{ form.cod_ecad.label }}</label>

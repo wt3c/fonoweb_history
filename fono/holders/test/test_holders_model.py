@@ -1,6 +1,9 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
+from django.shortcuts import resolve_url as r
 from model_mommy import mommy
+
+from fono.holders.forms import HolderForm
 from fono.holders.models import Holder
 
 
@@ -21,3 +24,27 @@ class HolderUserModelTest(TestCase):
 
     def test_create_holder_with_owner(self):
         self.assertTrue(Holder.objects.exists())
+
+    # Acabei não presindo, mantve como referencia
+    # def make_valited_form(self, **kwargs):
+    #     user = self.user1
+    #     valid = dict(
+    #         cod_ecad=171,
+    #         name='Tit_valid',
+    #         owner=user
+    #     )
+    #     data = dict(valid, **kwargs)
+    #     form = HolderForm(data)
+    #     form.is_valid()
+    #     return form
+
+    def test_holder_post(self):
+        user = self.user1
+        valid = dict(
+            cod_ecad=171,
+            name='Tit_valid',
+            owner=user
+        )
+        expected = "/login/?next=%2Ftitular"
+        resp = self.client.post(r('holder:new'), valid)
+        self.assertRedirects(resp, expected)
