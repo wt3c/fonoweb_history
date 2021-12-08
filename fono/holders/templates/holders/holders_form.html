@@ -20,6 +20,15 @@
                         {{ form.name.errors }}
                         {{ form.name }}
                     </div>
+
+                    <div class="pseudo">
+                        <div class="form-row label-block input-text">
+                            <label for="{{ form.pseudonyms.id_for_label }}"> {{ form.pseudonyms.label }}</label>
+                            {{ form.pseudonyms.errors }}
+                            {{ form.pseudonyms }}
+                        </div>
+                    </div>
+
                     <div class="form-row label-block input-text">
                         <label for="{{ form.type_doc.id_for_label }}"> {{ form.type_doc.label }}</label>
                         {{ form.type_doc.errors }}
@@ -47,29 +56,29 @@
                         {{ form.radical_ifpi }}
                     </div>
                     <div class="form-row label-block input-text">
-                        <label for="{{ form.is_editora.id_for_label }}"> {{ form.is_editora.label }}</label>
-                        {{ form.is_editora.errors }}
-                        {{ form.is_editora }}
+                        <label for="{{ form.is_publisher.id_for_label }}"> {{ form.is_publisher.label }}</label>
+                        {{ form.is_publisher.errors }}
+                        {{ form.is_publisher }}
                     </div>
                     <div class="form-row label-block input-text">
-                        <label for="{{ form.is_produtor_fono.id_for_label }}"> {{ form.is_produtor_fono.label }}</label>
-                        {{ form.is_produtor_fono.errors }}
-                        {{ form.is_produtor_fono }}
+                        <label for="{{ form.is_record_producer.id_for_label }}"> {{ form.is_record_producer.label }}</label>
+                        {{ form.is_record_producer.errors }}
+                        {{ form.is_record_producer }}
                     </div>
                     <div class="form-row label-block input-text">
-                        <label for="{{ form.is_interprete.id_for_label }}"> {{ form.is_interprete.label }}</label>
-                        {{ form.is_interprete.errors }}
-                        {{ form.is_interprete }}
+                        <label for="{{ form.is_interpreter.id_for_label }}"> {{ form.is_interpreter.label }}</label>
+                        {{ form.is_interpreter.errors }}
+                        {{ form.is_interpreter }}
                     </div>
                     <div class="form-row label-block input-text">
-                        <label for="{{ form.is_autor.id_for_label }}"> {{ form.is_autor.label }}</label>
-                        {{ form.is_autor.errors }}
-                        {{ form.is_autor }}
+                        <label for="{{ form.is_author.id_for_label }}"> {{ form.is_author.label }}</label>
+                        {{ form.is_author.errors }}
+                        {{ form.is_author }}
                     </div>
                     <div class="form-row label-block input-text">
-                        <label for="{{ form.is_musico.id_for_label }}"> {{ form.is_musico.label }}</label>
-                        {{ form.is_musico.errors }}
-                        {{ form.is_musico }}
+                        <label for="{{ form.is_musician.id_for_label }}"> {{ form.is_musician.label }}</label>
+                        {{ form.is_musician.errors }}
+                        {{ form.is_musician }}
                     </div>
                     <div class="form-row label-block input-text">
                         <label for="{{ form.is_deleted.id_for_label }}"> {{ form.is_deleted.label }}</label>
@@ -77,9 +86,9 @@
                         {{ form.is_deleted }}
                     </div>
                     <div class="form-row label-block input-text">
-                        <label for="{{ form.observacao.id_for_label }}"> {{ form.observacao.label }}</label>
-                        {{ form.observacao.errors }}
-                        {{ form.observacao }}
+                        <label for="{{ form.note.id_for_label }}"> {{ form.note.label }}</label>
+                        {{ form.note.errors }}
+                        {{ form.note }}
                     </div>
 
                     <p class="btn-row"><input type="submit" value="Enviar!"/></p>
