@@ -1,5 +1,7 @@
 from django.db import models
+from django.contrib.auth.models import User
 from django.shortcuts import resolve_url as r
+
 
 class Holder(models.Model):
     TP_PESSOA = [
@@ -7,6 +9,7 @@ class Holder(models.Model):
         ('F', 'FÍSICA'),
     ]
 
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField('Nome', max_length=100)
     cod_ecad = models.IntegerField('Cód.ECAD', blank=True, null=True)
     type_doc = models.CharField('Tipo Pessoa', max_length=1, choices=TP_PESSOA, default='F')
