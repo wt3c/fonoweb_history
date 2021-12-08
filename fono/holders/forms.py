@@ -2,7 +2,8 @@ from django import forms
 from .models import Holder
 
 
-class HoldersForm(forms.ModelForm):
+class HolderForm(forms.ModelForm):
     class Meta:
         model = Holder
         fields = "__all__"
+        exclude = ('owner', )
