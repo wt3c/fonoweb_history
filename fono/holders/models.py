@@ -3,15 +3,25 @@ from django.contrib.auth.models import User
 from django.shortcuts import resolve_url as r
 
 
+class Pseudonym(models.Model):
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    pseudonym = models.CharField('Pseudônimo', max_length=100)
+    is_main = models.BooleanField('É o Principal', default=False)
+
+    def __str__(self):
+        return self.pseudonym
+
+
 class Holder(models.Model):
     TP_PESSOA = [
         ('J', 'JURIDÍCA'),
         ('F', 'FÍSICA'),
     ]
 
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
-    name = models.CharField('Nome', max_length=100)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Usuário')
     cod_ecad = models.IntegerField('Cód.ECAD', blank=True, null=True)
+    name = models.CharField('Nome', max_length=100)
+    pseudonyms = models.ManyToManyField(Pseudonym, blank=True, verbose_name='Pseudonimo')
     type_doc = models.CharField('Tipo Pessoa', max_length=1, choices=TP_PESSOA, default='F')
     # TODO: Criar validators para CPF e CNPJ
     # cpf = models.CharField('CPF', max_length=11, validators=[validate_cpf])
@@ -19,13 +29,13 @@ class Holder(models.Model):
     cnpj = models.CharField('CNPJ', max_length=16, blank=True)
     ifpi = models.CharField('IFPI', max_length=3, blank=True)
     radical_ifpi = models.CharField('RADICAL IFPI', max_length=2, blank=True)
-    is_editora = models.BooleanField('É EDITORA', default=False)
-    is_produtor_fono = models.BooleanField('É PRODUTOR FONOGRAFICO', default=False)
-    is_interprete = models.BooleanField('É INTERPRETE', default=False)
-    is_autor = models.BooleanField('É AUTOR', default=False)
-    is_musico = models.BooleanField('É MUSICO', default=False)
+    is_publisher = models.BooleanField('É EDITORA', default=False)
+    is_record_producer = models.BooleanField('É PRODUTOR FONOGRAFICO', default=False)
+    is_interpreter = models.BooleanField('É INTERPRETE', default=False)
+    is_author = models.BooleanField('É AUTOR', default=False)
+    is_musician = models.BooleanField('É MUSICO', default=False)
     is_deleted = models.BooleanField(default=False)
-    observacao = models.TextField('OBSERVAÇÃO', blank=True)
+    note = models.TextField('OBSERVAÇÃO', blank=True)
 
     class Meta:
         verbose_name = 'titular'
