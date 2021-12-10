@@ -4,7 +4,8 @@ from django.shortcuts import resolve_url as r
 
 
 class Pseudonym(models.Model):
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    # owner = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Usuário')
+    holder = models.ForeignKey('Holder', blank=True, null=True, verbose_name='Titular', on_delete=models.CASCADE)
     pseudonym = models.CharField('Pseudônimo', max_length=100)
     is_main = models.BooleanField('É o Principal', default=False)
 
@@ -16,12 +17,13 @@ class Holder(models.Model):
     TP_PESSOA = [
         ('J', 'JURIDÍCA'),
         ('F', 'FÍSICA'),
-    ]
+    ] 
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Usuário')
     cod_ecad = models.IntegerField('Cód.ECAD', blank=True, null=True)
     name = models.CharField('Nome', max_length=100)
-    pseudonyms = models.ManyToManyField(Pseudonym, blank=True, verbose_name='Pseudonimo')
+    # pseudonyms = models.ManyToManyField(Pseudonym, blank=True, verbose_name='Pseudonimo')
+    # pseudonyms = models.ForeignKey(Pseudonym, blank=True, null=True, verbose_name='Pseudonimo', on_delete=models.CASCADE)
     type_doc = models.CharField('Tipo Pessoa', max_length=1, choices=TP_PESSOA, default='F')
     # TODO: Criar validators para CPF e CNPJ
     # cpf = models.CharField('CPF', max_length=11, validators=[validate_cpf])
