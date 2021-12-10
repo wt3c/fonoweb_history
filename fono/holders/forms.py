@@ -1,9 +1,15 @@
 from django import forms
-from .models import Holder
+from .models import Holder, Pseudonym
 
 
 class HolderForm(forms.ModelForm):
     class Meta:
         model = Holder
         fields = "__all__"
-        exclude = ('owner', )
+        exclude = ('owner',)
+
+
+class PseudonymForm(forms.ModelForm):
+    class Meta:
+        model = Pseudonym
+        fields = "__all__"

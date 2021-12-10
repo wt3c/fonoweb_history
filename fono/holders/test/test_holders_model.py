@@ -16,7 +16,7 @@ class HolderModelTest(TestCase):
 
 
 class HolderUserModelTest(TestCase):
-    """Test the One2Many relationship between the Holder and User tables """
+    """Test the M-One relationship between the Holder and User tables """
 
     def setUp(self) -> None:
         self.user1 = mommy.make(User, pk=1)
@@ -53,27 +53,25 @@ class HolderUserModelTest(TestCase):
 
 
 class HolderPseudoModelTest(TestCase):
-    """Test the M2M relationship between the Holder and Pseudonym tables"""
+    """Test the M-One relationship between the Holder and Pseudonym tables"""
 
     def setUp(self):
-        self.pseudo1 = mommy.make(Pseudonym, pk=1)
-        self.pseudo2 = mommy.make(Pseudonym, pk=2)
         self.holder1 = mommy.make(Holder, pk=1)
-        self.holder1.pseudonyms.add(self.pseudo1, self.pseudo2)
 
-    def test_create_holder_with_pseudo(self):
+        self.pseudo1 = mommy.make(Pseudonym, pk=1, holder=self.holder1)
+        self.pseudo2 = mommy.make(Pseudonym, pk=2, holder=self.holder1)
+
+    def test_create_holder_with_pseudonym(self):
         self.assertTrue(Holder.objects.exists())
+        self.assertTrue(Pseudonym.objects.exists())
 
     def test_holder_post_with_pseudonym(self):
         user = mommy.make(User)
-        pseudo1 = mommy.make(Pseudonym)
-        pseudo2 = mommy.make(Pseudonym)
 
         valid = dict(
             cod_ecad=171,
             name='Tit_valid',
-            owner=user,
-            pseudonyms=(pseudo1, pseudo2)
+            owner=user
         )
         expected = "/login/?next=%2Ftitular"
         resp = self.client.post(r('holder:new'), valid)

@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from fono.core.views import Home, login, logout  # , Login
+from fono.core.views import Home, login, logout
 
 urlpatterns = [
     path('', Home.as_view(), name='home'),

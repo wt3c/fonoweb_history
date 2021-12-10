@@ -2,10 +2,16 @@ from django.contrib import admin
 from fono.holders.models import Holder
 from fono.holders.models import Pseudonym
 
+class PseudonymInLine(admin.TabularInline):
+    model= Pseudonym
+    extra = 1
 
 class HolderModelAdmin(admin.ModelAdmin):
+    inlines = [PseudonymInLine]
+
     list_display = ('cod_ecad', 'name', 'type_doc', 'cpf', 'cnpj', 'ifpi', 'radical_ifpi', 'is_publisher',
                     'is_record_producer', 'is_interpreter', 'is_author', 'is_musician', 'note')
+
     list_filter = ('cod_ecad', 'name',)
     search_fields = ('cod_ecad', 'name',)
 

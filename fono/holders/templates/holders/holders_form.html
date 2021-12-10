@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block content %}
     <section>
         <div class="content row padding-bottom-3 desktop-12 container">
@@ -7,7 +9,27 @@
                 <form action="{% url 'holder:new' %}" novalidate method="POST">
                     {% csrf_token %}
 
-                    {{ user }}
+                    {{ form_pseudo.management_form }}
+                    {#                {{ fp.is_main }}#}
+                    {% for fp in form_pseudo %}
+                        <hr>
+
+                        <div class="inlineformset">
+                            <div class="form-row label-block input-text">
+                                <label for="{{ fp.is_main.id_for_label }}"> {{ fp.is_main.label }}</label>
+                                {{ fp.is_main.errors }}
+                                {{ fp.is_main}}
+                            </div>
+
+                        <div class="form-row label-block input-text">
+                                <label for="{{ fp.pseudonym.id_for_label }}"> {{ fp.pseudonym.label }}</label>
+                                {{ fp.pseudonym.errors }}
+                                {{ fp.pseudonym}}
+                            </div>
+
+
+                        </div>
+                    {% endfor %}
 
                     {{ form.non_field_errors }}
                     <div class="form-row label-block input-text">
@@ -94,8 +116,24 @@
                     <p class="btn-row"><input type="submit" value="Enviar!"/></p>
                 </form>
 
+
             </div>
         </div>
-
     </section>
+
+    {% block scripts %}
+        <script type="text/javascript">
+            $(function () {
+                $('.inlineformset').formset({
+                    prefix: '{{ form_pseudo.prefix }}',
+                    addText: 'Adcionar Pseudonimo',
+                    deleteText: 'Remover Pseudonimo'
+                });
+            })
+        </script>
+    {% endblock scripts %}
+
+
 {% endblock content %}
+
+
