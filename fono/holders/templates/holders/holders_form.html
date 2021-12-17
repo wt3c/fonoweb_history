@@ -9,27 +9,28 @@
                 <form action="{% url 'holder:new' %}" novalidate method="POST">
                     {% csrf_token %}
 
-                    {{ form_pseudo.management_form }}
-                    {#                {{ fp.is_main }}#}
-                    {% for fp in form_pseudo %}
-                        <hr>
-
-                        <div class="inlineformset">
-                            <div class="form-row label-block input-text">
-                                <label for="{{ fp.is_main.id_for_label }}"> {{ fp.is_main.label }}</label>
-                                {{ fp.is_main.errors }}
-                                {{ fp.is_main}}
-                            </div>
-
-                        <div class="form-row label-block input-text">
-                                <label for="{{ fp.pseudonym.id_for_label }}"> {{ fp.pseudonym.label }}</label>
-                                {{ fp.pseudonym.errors }}
-                                {{ fp.pseudonym}}
-                            </div>
-
-
-                        </div>
-                    {% endfor %}
+                    {# o layout está bem feio. TODO: Melhorar o layout #}
+                    <div class="inlineformset content row padding-bottom-3 container ">
+                        {{ form_pseudo.management_form }}
+                        {% for fp in form_pseudo %}
+                            <table>
+                                <th>
+                                    <div class="form-row label-block input-text">
+                                        <label for="{{ fp.pseudonym.id_for_label }}"> {{ fp.pseudonym.label }}</label>
+                                        {{ fp.pseudonym.errors }}
+                                        {{ fp.pseudonym}}
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="form-row label-block radio">
+                                        <label for="{{ fp.is_main.id_for_label }}"> {{ fp.is_main.label }}</label>
+                                        {{ fp.is_main.errors }}
+                                        {{ fp.is_main }}
+                                    </div>
+                                </th>
+                            </table>
+                        {% endfor %}
+                    </div>
 
                     {{ form.non_field_errors }}
                     <div class="form-row label-block input-text">
@@ -135,5 +136,3 @@
 
 
 {% endblock content %}
-
-
