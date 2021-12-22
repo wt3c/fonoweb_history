@@ -1,10 +1,13 @@
 from django.contrib import admin
 from fono.holders.models import Holder
 from fono.holders.models import Pseudonym
+from fono.holders.models import Society
+
 
 class PseudonymInLine(admin.TabularInline):
-    model= Pseudonym
+    model = Pseudonym
     extra = 1
+
 
 class HolderModelAdmin(admin.ModelAdmin):
     inlines = [PseudonymInLine]
@@ -18,3 +21,4 @@ class HolderModelAdmin(admin.ModelAdmin):
 
 admin.site.register(Holder, HolderModelAdmin)
 admin.site.register(Pseudonym)
+admin.site.register(Society)

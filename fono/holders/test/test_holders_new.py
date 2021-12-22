@@ -25,5 +25,6 @@ class HolderNewTest(TestCase):
         self.assertTemplateUsed(self.resp, 'holders/holders_form.html')
 
     def test_has_form(self):
+        """Test if exist in the Get Form"""
         form = self.resp.context['form']
-        self.assertIsInstance(form, HolderForm)
+        self.assertEqual(form, HolderForm)

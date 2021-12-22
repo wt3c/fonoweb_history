@@ -7,12 +7,13 @@ from extra_views import InlineFormSetFactory, CreateWithInlinesView
 from .forms import HolderForm, PseudonymForm
 from .models import Holder, Pseudonym
 
-class ManagerHolder(LoginRequiredMixin, View):
-    """ -- FORMSET  --
-       https://www.youtube.com/watch?v=_k-98frcD_M
-       https://github.com/elo80ka/django-dynamic-formset/blob/master/docs/usage.rst
 
-       A principio vou utizar a Generic.View, provavelmente no futuro eu troco.
+class ManagerHolder(LoginRequiredMixin, View):
+    """-- FORMSET  --
+    https://www.youtube.com/watch?v=_k-98frcD_M
+    https://github.com/elo80ka/django-dynamic-formset/blob/master/docs/usage.rst
+
+    A principio vou utizar a Generic.View, provavelmente no futuro eu troco.
     """
 
     template_name = "holders/holders_form.html"
@@ -50,6 +51,8 @@ class ManagerHolder(LoginRequiredMixin, View):
 
 
 """ Também podemos usar um biblioteca de terceiros """
+
+
 class PseudonymInLine(InlineFormSetFactory):
     # https://django-extra-views.readthedocs.io/en/latest/pages/getting-started.html
     model = Pseudonym
@@ -60,6 +63,7 @@ class PseudonymInLine(InlineFormSetFactory):
         "can_order": False,
         "can_delete": False,
     }
+
 
 class HolderCreate(LoginRequiredMixin, CreateWithInlinesView):
     template_name = "holders/holders_form.html"

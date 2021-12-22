@@ -10,15 +10,15 @@
                     {% csrf_token %}
 
                     {# o layout está bem feio. TODO: Melhorar o layout #}
+                    {{ form_pseudo.management_form }}
                     <div class="inlineformset content row padding-bottom-3 container ">
-                        {{ form_pseudo.management_form }}
                         {% for fp in form_pseudo %}
                             <table>
                                 <th>
                                     <div class="form-row label-block input-text">
                                         <label for="{{ fp.pseudonym.id_for_label }}"> {{ fp.pseudonym.label }}</label>
                                         {{ fp.pseudonym.errors }}
-                                        {{ fp.pseudonym}}
+                                        {{ fp.pseudonym }}
                                     </div>
                                 </th>
                                 <th>
@@ -38,6 +38,14 @@
                         {{ form.cod_ecad.errors }}
                         {{ form.cod_ecad }}
                     </div>
+
+                    <div class="form-row label-block combobox">
+                        <label for="{{ form.society.id_for_label }}"> {{ form.society.label }}</label>
+                        {{ form.society.errors }}
+                        {{ form.society }}
+                    </div>
+
+
                     <div class="form-row label-block input-text">
                         <label for="{{ form.name.id_for_label }}"> {{ form.name.label }}</label>
                         {{ form.name.errors }}

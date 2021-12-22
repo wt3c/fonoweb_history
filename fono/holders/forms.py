@@ -1,8 +1,10 @@
 from django import forms
 from .models import Holder, Pseudonym
+from .models import Society
 
 
 class HolderForm(forms.ModelForm):
+    # society_combom = forms.ModelChoiceField(queryset=Society.objects.all())
     class Meta:
         model = Holder
         fields = "__all__"
