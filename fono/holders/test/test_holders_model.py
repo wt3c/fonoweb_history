@@ -45,9 +45,18 @@ class HolderUserModelTest(TestCase):
             name='Tit_valid',
             owner=user
         )
-        expected = "/login/?next=%2Ftitular"
+        self.user = User.objects.create_user(
+            username="blackthorne@gmail.com",
+            email="blackthorne@gmail.com",
+            password="Mariko-san",
+            first_name="John",  # Shogun --James Clavell
+            last_name="BlackThorne"
+        )
+        # self.client.login(username='blackthorne@gmail.com', password="Mariko-san")
+        self.client.force_login(self.user)
         resp = self.client.post(r('holder:new'), valid)
-        self.assertRedirects(resp, expected)
+
+        self.assertEqual(200, resp.status_code)
 
 class HolderPseudoModelTest(TestCase):
     """Test the M-One relationship between the Holder and Pseudonym tables"""

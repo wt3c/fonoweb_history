@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.shortcuts import resolve_url as r
 
+from fono.core.managers import KindQuerySet
+
 
 class Society(models.Model):
     initials = models.CharField('SIGLA', max_length=50)
@@ -16,6 +18,28 @@ class Society(models.Model):
 
     def get_all_society(self):
         return Society.objects.all()
+
+
+class Contact(models.Model):
+    EMAIL = 'E'
+    PHONE = 'P'
+    KINDS = (
+        (EMAIL, 'Email'),
+        (PHONE, 'Telefone')
+    )
+    holder = models.ForeignKey('Holder', on_delete=models.CASCADE, verbose_name='Titular')
+    kind = models.CharField('Tipo', max_length=1, choices=KINDS)
+    value = models.CharField('Valor', max_length=50)
+
+    # Explicitando o modulo objects
+    objects = KindQuerySet.as_manager()
+
+    class Meta:
+        verbose_name = 'contato'
+        verbose_name_plural = 'contatos'
+
+    def __str__(self):
+        return self.value
 
 
 class Pseudonym(models.Model):

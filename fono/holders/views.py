@@ -4,7 +4,9 @@ from django.views.generic import CreateView, View
 from django.forms.models import inlineformset_factory
 from extra_views import InlineFormSetFactory, CreateWithInlinesView
 
+from .forms import ContactForm
 from .forms import HolderForm, PseudonymForm
+from .models import Contact
 from .models import Holder, Pseudonym
 
 
@@ -20,39 +22,58 @@ class ManagerHolder(LoginRequiredMixin, View):
     login_url = "login"
     form = HolderForm
     model = Holder
+    # Form Pseudonym
     form_pseudo_factory = inlineformset_factory(
         Holder, Pseudonym, form=PseudonymForm, extra=1
     )
     form_pseudo = form_pseudo_factory()
+    # Form Contact
+    form_society_factory = inlineformset_factory(
+        Holder, Contact, form=ContactForm, extra=1
+    )
+    form_contact = form_society_factory()
 
     def get(self, request):
-        context = {"form": self.form, "form_pseudo": self.form_pseudo}
+        context = {"form": self.form, "form_pseudo": self.form_pseudo,
+                   "form_contact": self.form_contact}
         return render(request, self.template_name, context)
 
     def post(self, request):
         form = HolderForm(request.POST)
         form.instance.owner = request.user
-
+        # Pseudonym
         form_pseudo_factory = inlineformset_factory(
             Holder, Pseudonym, form=PseudonymForm
         )
         form_pseudo = form_pseudo_factory(request.POST)
+        # Contact
+        form_contact_factory = inlineformset_factory(
+            Holder, Contact, form=ContactForm
+        )
+        form_contact = form_contact_factory(request.POST)
 
-        if form.is_valid() and form_pseudo.is_valid():
+        if form.is_valid() and form_pseudo.is_valid() and form_contact.is_valid():
             holder = form.save()
+            # ..::FORMSETs::..
+            # Pseudonym
             form_pseudo.instance = holder
             form_pseudo.save()
+            # Contact
+            form_contact.instance = holder
+            form_contact.save()
+
+            from pprint import pprint
+            pprint(self.request.POST)
+
 
             return redirect(reverse("holder:new"))
 
         else:
-            context = {"form": form, "form_pseudo": form_pseudo}
+            context = {"form": form, "form_pseudo": form_pseudo, "form_contact": form_contact}
             return render(request, self.template_name, context)
 
 
 """ Também podemos usar um biblioteca de terceiros """
-
-
 class PseudonymInLine(InlineFormSetFactory):
     # https://django-extra-views.readthedocs.io/en/latest/pages/getting-started.html
     model = Pseudonym

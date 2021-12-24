@@ -13,7 +13,7 @@
                     {{ form_pseudo.management_form }}
                     <div class="inlineformset content row padding-bottom-3 container ">
                         {% for fp in form_pseudo %}
-                            <table>
+                            <table id="PseudoFormsetTable" border="0" cellpadding="0">
                                 <th>
                                     <div class="form-row label-block input-text">
                                         <label for="{{ fp.pseudonym.id_for_label }}"> {{ fp.pseudonym.label }}</label>
@@ -80,12 +80,37 @@
                         {{ form.ifpi.errors }}
                         {{ form.ifpi }}
                     </div>
-
                     <div class="form-row label-block input-text">
                         <label for="{{ form.radical_ifpi.id_for_label }}"> {{ form.radical_ifpi.label }}</label>
                         {{ form.radical_ifpi.errors }}
                         {{ form.radical_ifpi }}
                     </div>
+
+                    {# .......::: Dynamic contacts :::.......#}
+                    {{ form_contact.management_form }}
+                    <div class="inlineformset content row padding-bottom-3 container ">
+                        {% for contact in form_contact %}
+                            <table id="ContactFormsetTable">
+                                <th>
+                                    <div class="form-row label-block input-text">
+                                        <label for="{{ contact.kind.id_for_label }}"> {{ contact.kind.label }}</label>
+                                        {{ contact.kind.errors }}
+                                        {{ contact.kind }}
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="form-row label-block input-text">
+                                        <label for="{{ contact.value.id_for_label }}"> {{ contact.value.label }}</label>
+                                        {{ contact.value.errors }}
+                                        {{ contact.value }}
+                                    </div>
+                                </th>
+
+                            </table>
+                        {% endfor %}
+                    </div>
+
+
                     <div class="form-row label-block input-text">
                         <label for="{{ form.is_publisher.id_for_label }}"> {{ form.is_publisher.label }}</label>
                         {{ form.is_publisher.errors }}
@@ -133,14 +158,20 @@
     {% block scripts %}
         <script type="text/javascript">
             $(function () {
-                $('.inlineformset').formset({
+                $('#PseudoFormsetTable tbody tr').formset({
                     prefix: '{{ form_pseudo.prefix }}',
+                    formCssClass: 'dynamic-formset1',
                     addText: 'Adcionar Pseudonimo',
                     deleteText: 'Remover Pseudonimo'
+                });
+                $('#ContactFormsetTable tbody tr').formset({
+                    prefix: '{{ form_contact.prefix }}',
+                    formCssClass: 'dynamic-formset2',
+                    addText: 'Adcionar Contato',
+                    deleteText: 'Remover Contato'
                 });
             })
         </script>
     {% endblock scripts %}
-
 
 {% endblock content %}
