@@ -13,6 +13,7 @@ etc/
 man/
 share/
 build/
+include/
 develop-eggs/
 dist/
 downloads/
