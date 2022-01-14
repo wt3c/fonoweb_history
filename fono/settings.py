@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django_browser_reload',
     # https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
     'debug_toolbar',
+    # https://pypi.org/project/django-widget-tweaks/
+    'widget_tweaks',
     # Apps
     'fono.core',
     'fono.holders',
