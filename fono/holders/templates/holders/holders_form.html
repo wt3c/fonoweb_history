@@ -2,20 +2,20 @@
 {% load static %}
 
 {% block content %}
-    <section>
-        <div class="content row padding-bottom-3 desktop-12 container">
+    <section class="container-fluid">
+        <div class="container">
             <h1>Titular</h1>
-            <div class="desktop-6">
+            <div>
                 <form action="{% url 'holder:new' %}" novalidate method="POST">
                     {% csrf_token %}
 
                     {# o layout está bem feio. TODO: Melhorar o layout #}
                     {{ form_pseudo.management_form }}
-                    <div class="inlineformset content row padding-bottom-3 container ">
+                    <div class="container">
                         {% for fp in form_pseudo %}
                             <table id="PseudoFormsetTable" border="0" cellpadding="0">
                                 <th>
-                                    <div class="form-row label-block input-text">
+                                    <div class="form-control">
                                         <label for="{{ fp.pseudonym.id_for_label }}"> {{ fp.pseudonym.label }}</label>
                                         {{ fp.pseudonym.errors }}
                                         {{ fp.pseudonym }}
