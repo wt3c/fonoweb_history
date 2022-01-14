@@ -1,5 +1,7 @@
 {% extends "base.html" %}
+{% load widget_tweaks %}
 {% block content %}
+
 
     {% if form.errors %}
         <p>Your username and password didn't match. Please try again.</p>
@@ -14,27 +16,28 @@
         {% endif %}
     {% endif %}
 
-    <form method="post" action="{% url 'login' %}">
-        {% csrf_token %}
-        <div class="container">
-            <table class="jumbotron jumbotron-fluid">
-                <tr>
-                    <td>{{ form.username.label_tag }}</td>
-                    <td>{{ form.username }}</td>
-                </tr>
-                <tr>
-                    <td>{{ form.password.label_tag }}</td>
-                    <td>{{ form.password }}</td>
-                </tr>
-            </table>
+    <section class=" container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <form method="post" action="{% url 'login' %}" class="col-12">
+                {% csrf_token %}
 
+                <div class=" form-group col-6">
+                    {{ form.username.label_tag }}
+                    {{ form.username |attr:"class:form-control text-uppercase" }}
+                </div>
 
-            <input type="submit" value="login">
-            <input type="hidden" name="next" value="{{ next }}">
+                <div class="form-group col-6">
+                    {{ form.password.label_tag }}
+                    {{ form.password | attr:"class:form-control" }}
+                </div>
+
+                <div>
+                    <input type="submit" value="login" class="btn btn-info">
+                    <input type="hidden" name="next" value="{{ next }}">
+                </div>
+
+            </form>
         </div>
-    </form>
-
-    Assumes you setup the password_reset view in your URLconf
-    {#    <p><a href="{% url 'password_reset' %}">Lost password?</a></p>#}
+    </section>
 
 {% endblock %}
