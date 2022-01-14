@@ -1,152 +1,186 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static widget_tweaks %}
 
 {% block content %}
-    <section class="container-fluid">
-        <div class="container">
-            <h1>Titular</h1>
+    <section class="container">
+        <div class="container-fluid col-md-12">
+            <h1 class="fas fa-camera">Titular</h1>
             <div>
                 <form action="{% url 'holder:new' %}" novalidate method="POST">
                     {% csrf_token %}
 
-                    {# o layout está bem feio. TODO: Melhorar o layout #}
-                    {{ form_pseudo.management_form }}
-                    <div class="container">
-                        {% for fp in form_pseudo %}
-                            <table id="PseudoFormsetTable" border="0" cellpadding="0">
-                                <th>
-                                    <div class="form-control">
-                                        <label for="{{ fp.pseudonym.id_for_label }}"> {{ fp.pseudonym.label }}</label>
-                                        {{ fp.pseudonym.errors }}
-                                        {{ fp.pseudonym }}
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="form-row label-block radio">
-                                        <label for="{{ fp.is_main.id_for_label }}"> {{ fp.is_main.label }}</label>
-                                        {{ fp.is_main.errors }}
-                                        {{ fp.is_main }}
-                                    </div>
-                                </th>
-                            </table>
-                        {% endfor %}
-                    </div>
+                    <section id="forms_errors" class="col-md-6">
+                        {% if form.errors %}
+                            <div class="alert alert-danger" role="alert">
+                                {{ form.errors }}
+                            </div>
+                        {% endif %}
+                    </section>
 
-                    {{ form.non_field_errors }}
-                    <div class="form-row label-block input-text">
+                    <div class="form-group col-md-2 label label-primary">
                         <label for="{{ form.cod_ecad.id_for_label }}"> {{ form.cod_ecad.label }}</label>
-                        {{ form.cod_ecad.errors }}
-                        {{ form.cod_ecad }}
+
+                        {% if form.cod_ecad.errors %}
+                            <div class="alert alert-danger col-md-6" role="alert">
+                                {{ form.cod_ecad.errors }}
+                            </div>
+                        {% endif %}
+                        {{ form.cod_ecad |attr:"class:form-control" }}
                     </div>
 
-                    <div class="form-row label-block combobox">
+                    {#                    <div class="form-group col-md-4 select2-dropdown">#}
+                    <div class="col-md-4 dropdown">
                         <label for="{{ form.society.id_for_label }}"> {{ form.society.label }}</label>
-                        {{ form.society.errors }}
-                        {{ form.society }}
+                        {% if form.society.errors %}
+                            <div class="alert alert-danger col-md-6" role="alert">
+                                {{ form.society.errors }}
+                            </div>
+                        {% endif %}
+                        {{ form.society |attr:"class:form-control form-control-sm" }}
                     </div>
 
-
-                    <div class="form-row label-block input-text">
+                    <div class="form-group col-4">
                         <label for="{{ form.name.id_for_label }}"> {{ form.name.label }}</label>
-                        {{ form.name.errors }}
-                        {{ form.name }}
+                        {% if form.name.errors %}
+                            <div class="alert alert-danger col-6" role="alert">
+                                {{ form.name.errors }}
+                            </div>
+                        {% endif %}
+                        {{ form.name |attr:"class:form-control text-uppercase" }}
                     </div>
 
-                    <div class="pseudo">
-                        <div class="form-row label-block input-text">
-                            <label for="{{ form.pseudonyms.id_for_label }}"> {{ form.pseudonyms.label }}</label>
-                            {{ form.pseudonyms.errors }}
-                            {{ form.pseudonyms }}
+                    {# .......::: Dynamic Pseudonym :::.......#}
+                    <div name="pseudonimo">
+                        {{ form_pseudo.management_form }}
+                        <div class="card border-primary mb-12" style="max-width: 50rem;">
+                            <div class="card-header"><b>Pseudonimo</b></div>
+                            <div class="card-body form-group">
+                                {% for fp in form_pseudo %}
+                                    <table id="PseudoFormsetTable" class="table table-responsive-md">
+                                        <th>
+                                            <div class="form-control">
+                                                <label for="{{ fp.pseudonym.id_for_label }}"> {{ fp.pseudonym.label }}</label>
+                                                {{ fp.pseudonym.errors }}
+                                                {{ fp.pseudonym  |attr:"class:form-control text-uppercase" }}
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="form-row radio input-radio">
+                                                <label for="{{ fp.is_main.id_for_label }}"> {{ fp.is_main.label }}</label>
+                                                {{ fp.is_main.errors }}
+                                                {{ fp.is_main |attr:"class:radio" }}
+                                            </div>
+                                        </th>
+                                    </table>
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
 
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.type_doc.id_for_label }}"> {{ form.type_doc.label }}</label>
-                        {{ form.type_doc.errors }}
-                        {{ form.type_doc }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.cpf.id_for_label }}"> {{ form.cpf.label }}</label>
-                        {{ form.cpf.errors }}
-                        {{ form.cpf }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.cnpj.id_for_label }}"> {{ form.cnpj.label }}</label>
-                        {{ form.cnpj.errors }}
-                        {{ form.cnpj }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.ifpi.id_for_label }}"> {{ form.ifpi.label }}</label>
-                        {{ form.ifpi.errors }}
-                        {{ form.ifpi }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.radical_ifpi.id_for_label }}"> {{ form.radical_ifpi.label }}</label>
-                        {{ form.radical_ifpi.errors }}
-                        {{ form.radical_ifpi }}
-                    </div>
+                    <div class="container ">
+                        <div class="row col-md-9">
+                            <div class="form-group col-md-2 dropdown">
+                                <label for="{{ form.type_doc.id_for_label }}"> {{ form.type_doc.label }}</label>
+                                {{ form.type_doc.errors }}
+                                {{ form.type_doc |attr:"class:form-control" }}
+                            </div>
 
-                    {# .......::: Dynamic contacts :::.......#}
-                    {{ form_contact.management_form }}
-                    <div class="inlineformset content row padding-bottom-3 container ">
-                        {% for contact in form_contact %}
-                            <table id="ContactFormsetTable">
-                                <th>
-                                    <div class="form-row label-block input-text">
-                                        <label for="{{ contact.kind.id_for_label }}"> {{ contact.kind.label }}</label>
-                                        {{ contact.kind.errors }}
-                                        {{ contact.kind }}
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="form-row label-block input-text">
-                                        <label for="{{ contact.value.id_for_label }}"> {{ contact.value.label }}</label>
-                                        {{ contact.value.errors }}
-                                        {{ contact.value }}
-                                    </div>
-                                </th>
+                            <div class="form-group col-md-2">
+                                <label for="{{ form.cpf.id_for_label }}"> {{ form.cpf.label }}</label>
+                                {{ form.cpf.errors }}
+                                {{ form.cpf |attr:"class:form-control" }}
+                            </div>
 
-                            </table>
-                        {% endfor %}
-                    </div>
+                            <div class="form-group col-md-2">
+                                <label for="{{ form.cnpj.id_for_label }}"> {{ form.cnpj.label }}</label>
+                                {{ form.cnpj.errors }}
+                                {{ form.cnpj |attr:"class:form-control" }}
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="{{ form.ifpi.id_for_label }}"> {{ form.ifpi.label }}</label>
+                                {{ form.ifpi.errors }}
+                                {{ form.ifpi |attr:"class:form-control" }}
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="{{ form.radical_ifpi.id_for_label }}"> {{ form.radical_ifpi.label }}</label>
+                                {{ form.radical_ifpi.errors }}
+                                {{ form.radical_ifpi |attr:"class:form-control" }}
+                            </div>
+                        </div>
+
+                        {# .......::: Dynamic contacts :::.......#}
+                        {{ form_contact.management_form }}
+                        <div class="card border-primary mb-12" style="max-width: 50rem;">
+                            <div class="card-header"><b>Contatos</b></div>
+                            <div class="card-body form-group">
+                                {% for contact in form_contact %}
+                                    <table id="ContactFormsetTable" class="table table-responsive-md">
+                                        <th>
+                                            <div class="form-control">
+                                                <label for="{{ contact.kind.id_for_label }}"> {{ contact.kind.label }}</label>
+                                                {{ contact.kind.errors }}
+                                                {{ contact.kind  |attr:"class:form-control text-uppercase" }}
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="form-control">
+                                                <label for="{{ contact.value.id_for_label }}"> {{ contact.value.label }}</label>
+                                                {{ contact.value.errors }}
+                                                {{ contact.value  |attr:"class:form-control text-uppercase" }}
+                                            </div>
+                                        </th>
+
+                                    </table>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="container ">
+                            <div class="row col-md-9">
+                                <div class="col">
+                                    <label for="{{ form.is_publisher.id_for_label }}"> {{ form.is_publisher.label }}</label>
+                                    {{ form.is_publisher.errors }}
+                                    {{ form.is_publisher }}
+                                </div>
+
+                                <div class="col">
+                                    <label for="{{ form.is_record_producer.id_for_label }}"> {{ form.is_record_producer.label }}</label>
+                                    {{ form.is_record_producer.errors }}
+                                    {{ form.is_record_producer }}
+                                </div>
 
 
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.is_publisher.id_for_label }}"> {{ form.is_publisher.label }}</label>
-                        {{ form.is_publisher.errors }}
-                        {{ form.is_publisher }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.is_record_producer.id_for_label }}"> {{ form.is_record_producer.label }}</label>
-                        {{ form.is_record_producer.errors }}
-                        {{ form.is_record_producer }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.is_interpreter.id_for_label }}"> {{ form.is_interpreter.label }}</label>
-                        {{ form.is_interpreter.errors }}
-                        {{ form.is_interpreter }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.is_author.id_for_label }}"> {{ form.is_author.label }}</label>
-                        {{ form.is_author.errors }}
-                        {{ form.is_author }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.is_musician.id_for_label }}"> {{ form.is_musician.label }}</label>
-                        {{ form.is_musician.errors }}
-                        {{ form.is_musician }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.is_deleted.id_for_label }}"> {{ form.is_deleted.label }}</label>
-                        {{ form.is_deleted.errors }}
-                        {{ form.is_deleted }}
-                    </div>
-                    <div class="form-row label-block input-text">
-                        <label for="{{ form.note.id_for_label }}"> {{ form.note.label }}</label>
-                        {{ form.note.errors }}
-                        {{ form.note }}
-                    </div>
+                                <div class="col">
+                                    <label for="{{ form.is_interpreter.id_for_label }}"> {{ form.is_interpreter.label }}</label>
+                                    {{ form.is_interpreter.errors }}
+                                    {{ form.is_interpreter }}
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col">
+                                    <label for="{{ form.is_author.id_for_label }}"> {{ form.is_author.label }}</label>
+                                    {{ form.is_author.errors }}
+                                    {{ form.is_author }}
+                                </div>
+
+                                <div class="col">
+                                    <label for="{{ form.is_musician.id_for_label }}"> {{ form.is_musician.label }}</label>
+                                    {{ form.is_musician.errors }}
+                                    {{ form.is_musician }}
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-md-6">
+                            <label for="{{ form.note.id_for_label }}"> {{ form.note.label }}</label>
+                            {{ form.note.errors }}
+                            {{ form.note |attr:"class:form-control" }}
+                        </div>
+                    </div>
                     <p class="btn-row"><input type="submit" value="Enviar!"/></p>
                 </form>
 
@@ -160,15 +194,15 @@
             $(function () {
                 $('#PseudoFormsetTable tbody tr').formset({
                     prefix: '{{ form_pseudo.prefix }}',
-                    formCssClass: 'dynamic-formset1',
-                    addText: 'Adcionar Pseudonimo',
-                    deleteText: 'Remover Pseudonimo'
+                    formCssClass: 'dynamic-formset2',
+                    addText: "<i class='fas fa-plus-square'></i>",
+                    deleteText: "<i class='fas fa-trash-alt form-row'></i>"
                 });
                 $('#ContactFormsetTable tbody tr').formset({
                     prefix: '{{ form_contact.prefix }}',
                     formCssClass: 'dynamic-formset2',
-                    addText: 'Adcionar Contato',
-                    deleteText: 'Remover Contato'
+                    addText: "<i class='fas fa-user-plus'",
+                    deleteText: "<i class='fas fa-user-minus'></i>"
                 });
             })
         </script>

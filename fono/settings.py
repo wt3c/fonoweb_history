@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
     'debug_toolbar',
     # https://pypi.org/project/django-widget-tweaks/
+    # https://github.com/jazzband/django-widget-tweaks
     'widget_tweaks',
     # Apps
     'fono.core',
