@@ -19,6 +19,8 @@ class Home(LoginRequiredMixin, TemplateView):
 # TODO .: Alterar as funções login e logout para class mixins.
 def login(request):
     if request.method == 'POST':
+    
+        __import__('pdb').set_trace()
         form = AuthenticationForm(data=request.POST)
 
         if form.is_valid():
