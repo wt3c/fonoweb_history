@@ -1,8 +1,12 @@
-Django==3.2.9
+Django
+django-extensions
+django_extra_views
+django_browser_reload
+django-widget-tweaks
+django-test-without-migrations
 dj-database-url
 dj-static
 python-decouple
+pytest
 pytz
-django-extensions
 static3
-django-test-without-migrations
