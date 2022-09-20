@@ -13,9 +13,6 @@ class Home(LoginRequiredMixin, TemplateView):
         context = super().get_context_data(**kwargs)
 
 
-# TODO .: Alterar as funções login e logout para class mixins.
-
-
 def login(request):
     if request.method == 'POST':
 
