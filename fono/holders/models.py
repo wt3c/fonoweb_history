@@ -8,6 +8,7 @@ from fono.core.managers import KindQuerySet
 class Society(models.Model):
     initials = models.CharField('SIGLA', max_length=50)
     name = models.CharField('NOME', max_length=200)
+    is_national = models.BooleanField()
 
     class Meta:
         verbose_name = 'Sociedade'

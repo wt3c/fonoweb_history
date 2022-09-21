@@ -1,0 +1,2135 @@
+[
+  {
+    "model": "holders.Society",
+    "pk": 1,
+    "fields": {
+      "initials": "ACUM",
+      "name": "ACUM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 2,
+    "fields": {
+      "initials": "AEPI",
+      "name": "AEPI",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 3,
+    "fields": {
+      "initials": "AGADU",
+      "name": "AGADU",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 4,
+    "fields": {
+      "initials": "AKM",
+      "name": "AKM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 5,
+    "fields": {
+      "initials": "BUCADA",
+      "name": "BUCADA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 6,
+    "fields": {
+      "initials": "APDAYC",
+      "name": "APDAYC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 7,
+    "fields": {
+      "initials": "APRA",
+      "name": "APRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 8,
+    "fields": {
+      "initials": "ARTISJUS",
+      "name": "ARTISJUS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 9,
+    "fields": {
+      "initials": "ASCAP",
+      "name": "ASCAP",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 10,
+    "fields": {
+      "initials": "AUME",
+      "name": "AUME",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 11,
+    "fields": {
+      "initials": "AMCOS",
+      "name": "AMCOS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 12,
+    "fields": {
+      "initials": "ARGENTOR",
+      "name": "ARGENTOR",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 13,
+    "fields": {
+      "initials": "APA",
+      "name": "APA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 14,
+    "fields": {
+      "initials": "BUMDA",
+      "name": "BUMDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 15,
+    "fields": {
+      "initials": "AMRA",
+      "name": "AMRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 16,
+    "fields": {
+      "initials": "BGDA",
+      "name": "BGDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 17,
+    "fields": {
+      "initials": "BMDA",
+      "name": "BMDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 18,
+    "fields": {
+      "initials": "SODRAC",
+      "name": "SODRAC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 19,
+    "fields": {
+      "initials": "BMI",
+      "name": "BMI",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 20,
+    "fields": {
+      "initials": "MCSN",
+      "name": "MCSN",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 21,
+    "fields": {
+      "initials": "BUMA",
+      "name": "BUMA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 22,
+    "fields": {
+      "initials": "BURIDA",
+      "name": "BURIDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 23,
+    "fields": {
+      "initials": "BSDA",
+      "name": "BSDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 24,
+    "fields": {
+      "initials": "CASH",
+      "name": "CASH",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 25,
+    "fields": {
+      "initials": "CAPAC",
+      "name": "CAPAC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 26,
+    "fields": {
+      "initials": "LITA",
+      "name": "LITA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 27,
+    "fields": {
+      "initials": "SCD",
+      "name": "SCD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 28,
+    "fields": {
+      "initials": "AMAR",
+      "name": "ASSOCIACAO DE MUSICOS ARRANJADORES E REGENTES",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 29,
+    "fields": {
+      "initials": "DILIA",
+      "name": "DILIA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 30,
+    "fields": {
+      "initials": "FILSCAP",
+      "name": "FILSCAP",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 31,
+    "fields": {
+      "initials": "OMDA",
+      "name": "OMDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 32,
+    "fields": {
+      "initials": "FOX",
+      "name": "FOX",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 33,
+    "fields": {
+      "initials": "GEMA",
+      "name": "GEMA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 34,
+    "fields": {
+      "initials": "IPRS",
+      "name": "THE INDIAN PERFORMING RIGHT SOCIETY LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 35,
+    "fields": {
+      "initials": "BUBEDRA",
+      "name": "BUBEDRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 36,
+    "fields": {
+      "initials": "JASRAC",
+      "name": "JASRAC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 37,
+    "fields": {
+      "initials": "MUSICAUTOR",
+      "name": "MUSICAUTOR",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 38,
+    "fields": {
+      "initials": "KODA",
+      "name": "KODA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 39,
+    "fields": {
+      "initials": "LITME",
+      "name": "LITME",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 40,
+    "fields": {
+      "initials": "LVG",
+      "name": "LVG",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 41,
+    "fields": {
+      "initials": "MCSK",
+      "name": "MCSK",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 42,
+    "fields": {
+      "initials": "MCPS",
+      "name": "MCPS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 43,
+    "fields": {
+      "initials": "BBDA",
+      "name": "BBDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 44,
+    "fields": {
+      "initials": "MRS",
+      "name": "MRS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 45,
+    "fields": {
+      "initials": "BCDA",
+      "name": "BCDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 46,
+    "fields": {
+      "initials": "NCB",
+      "name": "NCB",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 47,
+    "fields": {
+      "initials": "ONDA",
+      "name": "ONDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 48,
+    "fields": {
+      "initials": "OSA",
+      "name": "OSA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 49,
+    "fields": {
+      "initials": "PROLIT",
+      "name": "PROLIT",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 50,
+    "fields": {
+      "initials": "PRS - MCPS",
+      "name": "PRS - MCPS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 51,
+    "fields": {
+      "initials": "PROCAN",
+      "name": "PROCAN",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 52,
+    "fields": {
+      "initials": "ALCS",
+      "name": "ALCS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 53,
+    "fields": {
+      "initials": "SABAM",
+      "name": "SABAM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 54,
+    "fields": {
+      "initials": "SACD",
+      "name": "SACD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 55,
+    "fields": {
+      "initials": "SACERAU",
+      "name": "SACERAU",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 56,
+    "fields": {
+      "initials": "SACEM",
+      "name": "SOCIETE DES AUTERS, COMPOSITEURS ET EDITEURS DE MUSIQUE",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 57,
+    "fields": {
+      "initials": "SACM",
+      "name": "SACM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 58,
+    "fields": {
+      "initials": "SACVEN",
+      "name": "SACVEN",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 59,
+    "fields": {
+      "initials": "SADAIC",
+      "name": "SADAIC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 60,
+    "fields": {
+      "initials": "SADEMBRA",
+      "name": "SOC.ADM.DIREITOS DE EXECUCAO MUSICAL DO BRASIL",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 61,
+    "fields": {
+      "initials": "SAMRO",
+      "name": "SAMRO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 62,
+    "fields": {
+      "initials": "SOKOJ",
+      "name": "SOKOJ",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 63,
+    "fields": {
+      "initials": "SAYCE",
+      "name": "SAYCE",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 64,
+    "fields": {
+      "initials": "SBACEM",
+      "name": "SOC.BRASILEIRA DE AUTORES,COMP.ESCRITORES MUSICA",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 65,
+    "fields": {
+      "initials": "SDRM",
+      "name": "SDRM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 66,
+    "fields": {
+      "initials": "SPA",
+      "name": "SPA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 67,
+    "fields": {
+      "initials": "SOGEM",
+      "name": "SOGEM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 68,
+    "fields": {
+      "initials": "SESAC",
+      "name": "SESAC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 69,
+    "fields": {
+      "initials": "SGAE",
+      "name": "SGAE",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 70,
+    "fields": {
+      "initials": "SCAM",
+      "name": "SCAM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 71,
+    "fields": {
+      "initials": "SIAE",
+      "name": "SIAE",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 72,
+    "fields": {
+      "initials": "SUISSIM",
+      "name": "SUISSIM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 73,
+    "fields": {
+      "initials": "SPACEM",
+      "name": "SPACEM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 74,
+    "fields": {
+      "initials": "STEF",
+      "name": "STEF",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 75,
+    "fields": {
+      "initials": "STEMRA",
+      "name": "STEMRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 76,
+    "fields": {
+      "initials": "STIM",
+      "name": "STIM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 77,
+    "fields": {
+      "initials": "SUISA",
+      "name": "SUISA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 78,
+    "fields": {
+      "initials": "SARRAL",
+      "name": "SARRAL",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 79,
+    "fields": {
+      "initials": "SODACT",
+      "name": "SODACT",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 80,
+    "fields": {
+      "initials": "SONECA",
+      "name": "SONECA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 81,
+    "fields": {
+      "initials": "SAYCO",
+      "name": "SAYCO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 82,
+    "fields": {
+      "initials": "SOZA",
+      "name": "SOZA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 83,
+    "fields": {
+      "initials": "SICAM",
+      "name": "SOC.INDEPENDENTE DE COMP.E AUTORES MUSICAIS",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 84,
+    "fields": {
+      "initials": "SPACEMF",
+      "name": "SPACEMF",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 85,
+    "fields": {
+      "initials": "CMRRA",
+      "name": "CMRRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 86,
+    "fields": {
+      "initials": "TEOSTO",
+      "name": "TEOSTO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 87,
+    "fields": {
+      "initials": "TONO",
+      "name": "TONO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 88,
+    "fields": {
+      "initials": "SSA",
+      "name": "SSA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 89,
+    "fields": {
+      "initials": "SOCADRA",
+      "name": "SOCADRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 90,
+    "fields": {
+      "initials": "UBC",
+      "name": "UNIAO BRASILEIRA DE COMPOSITORES",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 91,
+    "fields": {
+      "initials": "RAO",
+      "name": "RAO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 92,
+    "fields": {
+      "initials": "WORT",
+      "name": "WORT",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 93,
+    "fields": {
+      "initials": "COTT",
+      "name": "COTT",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 94,
+    "fields": {
+      "initials": "ZAIKS",
+      "name": "ZAIKS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 95,
+    "fields": {
+      "initials": "ZIMRA",
+      "name": "ZIMRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 96,
+    "fields": {
+      "initials": "SOCAN",
+      "name": "SOCAN",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 97,
+    "fields": {
+      "initials": "NAMRIS",
+      "name": "NAMRIS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 98,
+    "fields": {
+      "initials": "ACDAM",
+      "name": "ACDAM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 99,
+    "fields": {
+      "initials": "MACP",
+      "name": "MACP",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 100,
+    "fields": {
+      "initials": "MASA",
+      "name": "MASA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 101,
+    "fields": {
+      "initials": "COMPASS",
+      "name": "COMPOSERS AND AUTHORS SOCIETY OF SINGAPORE LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 102,
+    "fields": {
+      "initials": "ACAM",
+      "name": "ACAM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 103,
+    "fields": {
+      "initials": "CHA",
+      "name": "CHA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 104,
+    "fields": {
+      "initials": "KCI",
+      "name": "KCI",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 105,
+    "fields": {
+      "initials": "LATGA",
+      "name": "LATGA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 106,
+    "fields": {
+      "initials": "HDS-ZAMP",
+      "name": "HDS-ZAMP",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 107,
+    "fields": {
+      "initials": "SAZAS",
+      "name": "SOCIETY OF COMPOSERS AND AUTHORES FOR THE MUSIC COPYRIGHT PR",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 108,
+    "fields": {
+      "initials": "LAA",
+      "name": "LAA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 109,
+    "fields": {
+      "initials": "AGAYC",
+      "name": "AGAYC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 110,
+    "fields": {
+      "initials": "UCMR-ADA",
+      "name": "UCMR-ADA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 111,
+    "fields": {
+      "initials": "EAU",
+      "name": "EAU",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 112,
+    "fields": {
+      "initials": "MESAM",
+      "name": "MESAM",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 113,
+    "fields": {
+      "initials": "KOMCA",
+      "name": "KOREA MUSIC COPYRIGHT ASSOCIATION",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 114,
+    "fields": {
+      "initials": "MCSC",
+      "name": "MUSIC COPYRIGHT SOCIETY OF CHINA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 115,
+    "fields": {
+      "initials": "LIRA",
+      "name": "LIRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 116,
+    "fields": {
+      "initials": "VDFS",
+      "name": "VDFS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 117,
+    "fields": {
+      "initials": "AKKA-LAA",
+      "name": "AKKA-LAA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 118,
+    "fields": {
+      "initials": "COSGA",
+      "name": "COSGA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 119,
+    "fields": {
+      "initials": "COSOMA",
+      "name": "COSOMA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 120,
+    "fields": {
+      "initials": "MCT",
+      "name": "MCT",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 121,
+    "fields": {
+      "initials": "IMRO",
+      "name": "IMRO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 122,
+    "fields": {
+      "initials": "SOBODAYCOM",
+      "name": "SOCIEDAD BOLIVIANA DE AUTORES Y COMPOSITORES DE MÚSICA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 123,
+    "fields": {
+      "initials": "SPAC",
+      "name": "SPAC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 124,
+    "fields": {
+      "initials": "MUST",
+      "name": "MUST",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 125,
+    "fields": {
+      "initials": "ASSIM",
+      "name": "ASSOCIACAO DE INTERPRETES E MUSICOS",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 126,
+    "fields": {
+      "initials": "ABRAMUS",
+      "name": "ASSOCIACAO BRASILEIRA DE MÚSICA",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 127,
+    "fields": {
+      "initials": "ANACIM",
+      "name": "ASSOC.NACIONAL DE AUTORES COMP.E INTERP.MUSICA",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 128,
+    "fields": {
+      "initials": "SABEM",
+      "name": "ASSOC.AUTORES BRASILEIROS E ESCRIT.MUSICA",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 129,
+    "fields": {
+      "initials": "SOCINPRO",
+      "name": "SOC.BRASILEIRA ADM.PROTECAO DE DIREITOS INTELECT.",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 130,
+    "fields": {
+      "initials": "ABRAC",
+      "name": "ASSOCIACAO BRASILEIRA DE AUT. COMP. INT. E MUSICOS",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 131,
+    "fields": {
+      "initials": "ATIDA",
+      "name": "ASSOCIACAO DE TITULARES DE DIREITOS AUTORAIS",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 280,
+    "fields": {
+      "initials": "BNDA",
+      "name": "BNDA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 281,
+    "fields": {
+      "initials": "ALBAUTOR",
+      "name": "ALBAUTOR",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 282,
+    "fields": {
+      "initials": "BUTODRA",
+      "name": "BUTODRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 283,
+    "fields": {
+      "initials": "SADA",
+      "name": "SADA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 284,
+    "fields": {
+      "initials": "ZAMCOPS",
+      "name": "ZAMCOPS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 285,
+    "fields": {
+      "initials": "SADH",
+      "name": "SADH",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 287,
+    "fields": {
+      "initials": "SCAU",
+      "name": "SCAU",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 288,
+    "fields": {
+      "initials": "GESATCH",
+      "name": "GESATCH",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 289,
+    "fields": {
+      "initials": "DPRS",
+      "name": "DPRS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 320,
+    "fields": {
+      "initials": "ACIMBRA",
+      "name": "ASSOCIAÇÃO DE COMP. E INTER. MUSICAIS DO BRASIL",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 402,
+    "fields": {
+      "initials": "MSG",
+      "name": "MUSIKI ESERI SAHIPLERI GRUBU",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 480,
+    "fields": {
+      "initials": "SGACEDOM",
+      "name": "SOCIEDAD GENERAL E AUTORES COMPOSITORES Y EDITORES DOMINICAN",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 540,
+    "fields": {
+      "initials": "RAAP",
+      "name": "RECORDED ARTISTS AND PERFORMERS LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 560,
+    "fields": {
+      "initials": "SENA",
+      "name": "STICHTING TER EXPLOITAITIE VAN NABURIGE RECHTEN",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 580,
+    "fields": {
+      "initials": "AADI - CAPIF",
+      "name": "ASSOCION ARGENTINA DE INTÉRPRETES",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 581,
+    "fields": {
+      "initials": "GRAMEX",
+      "name": "GRAMMOFONINDUSTRIENS OG UDOVENDE KUNSTNERES INST.",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 582,
+    "fields": {
+      "initials": "AIE",
+      "name": "SOCIEDAD DE GESTION DE ESPANA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 601,
+    "fields": {
+      "initials": "ABAIEM",
+      "name": "ASSOCIACION BOLIVIANA DE INTERPRETES EJECUTANTES",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 602,
+    "fields": {
+      "initials": "ANDI",
+      "name": "ASOCIAC.NACIONAL DE INTERPRETES,SOCIEDAD DE GESTION COLETIVA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 603,
+    "fields": {
+      "initials": "SUDEI",
+      "name": "SOCIEDAD URUGUAYA DE ARTISTAS INTERPRETES",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 604,
+    "fields": {
+      "initials": "UNIMPRO",
+      "name": "UNION PERUANA DE INTERPRETES MUSICALES Y PRODUCTORES holdersGRA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 605,
+    "fields": {
+      "initials": "PPL - I",
+      "name": "PHONOGRAPHIC PERFORMANCE LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 606,
+    "fields": {
+      "initials": "ZAMP",
+      "name": "MUSICAL COPYRIGHT SOCIETY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 641,
+    "fields": {
+      "initials": "COSCAP",
+      "name": "COSCAP",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 642,
+    "fields": {
+      "initials": "AWA",
+      "name": "AWA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 660,
+    "fields": {
+      "initials": "JACAP",
+      "name": "JACAP",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 681,
+    "fields": {
+      "initials": "PPL - PF",
+      "name": "PHONOGRAPHIC PERFORMANCE LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 700,
+    "fields": {
+      "initials": "GED",
+      "name": "IMPORTAÇÃO DOS DADOS DO GED - DESTAQUE",
+      "is_national": true
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 721,
+    "fields": {
+      "initials": "SAMI",
+      "name": "SWEDISH ARTISTS AND MUSICIANS INTEREST ORGANIZATION",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 740,
+    "fields": {
+      "initials": "UACRR",
+      "name": "UKRAINIAN AGENCY OF COPYRIGHT AND RELATED RIGHTS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 743,
+    "fields": {
+      "initials": "GDA",
+      "name": "COOPERATIVA DE GESTÃO DOS DIREITOS DOS ARTISTAS INTERPRETE O",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 750,
+    "fields": {
+      "initials": "HUZIP",
+      "name": "HRVATSKA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 753,
+    "fields": {
+      "initials": "OBERIH",
+      "name": "UKRANIAN SOCIETY OF COPYRIGHT RALATED RIGHTS HOLDERS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 754,
+    "fields": {
+      "initials": "SAWP",
+      "name": "POLISH MUSICAL PERFORMING ARTISTS SOCIETY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 784,
+    "fields": {
+      "initials": "SOMAS",
+      "name": "SOCIEDADE MOÇAMBICANA DE AUTORES",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 804,
+    "fields": {
+      "initials": "APOLLON",
+      "name": "GREEK MUSICIANS ROYALTIES COLLETING SOCIETY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 805,
+    "fields": {
+      "initials": "ZAVOD IPF",
+      "name": "ZAVOD IPF",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 845,
+    "fields": {
+      "initials": "RPA",
+      "name": "RUSSIAN PHONOGRAPHIC ASSOCIATION",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 865,
+    "fields": {
+      "initials": "STOART",
+      "name": "UNION OF POLISH PEFORMANCE ARTIST ASSOCIATIONS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 866,
+    "fields": {
+      "initials": "ARMAUTHOR",
+      "name": "AUTHORS RIGTHS DEFENCE NGO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 867,
+    "fields": {
+      "initials": "UMA",
+      "name": "UKRAINIAN MUSIC ALLIANCE",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 875,
+    "fields": {
+      "initials": "COSOTA",
+      "name": "COPYRIGHT SOCIETY OF TANZANIA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 877,
+    "fields": {
+      "initials": "UPRS",
+      "name": "UGANDA PERFORMING RIGHT SOCIETY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 886,
+    "fields": {
+      "initials": "GESAP",
+      "name": "GEORGIAN SOCIETY OF AUTHORS AND PERFORMERS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 887,
+    "fields": {
+      "initials": "SOUNDEXCHANGE",
+      "name": "SOUNDEXCHANGE, INC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 889,
+    "fields": {
+      "initials": "SGP",
+      "name": "SGP DE GESTION DE PRODUCTION holdersGRAFICAS DEL PARAGUAY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 891,
+    "fields": {
+      "initials": "EJE",
+      "name": "EJECUTANTES SOCIEDAD DE GESTION COLECTIVA DE INTERES PUBLICO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 893,
+    "fields": {
+      "initials": "SARIME",
+      "name": "SOCIEDAD DE ARTISTAS INT Y MUSICOS EXEC DEL ECUADOR",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 895,
+    "fields": {
+      "initials": "HMS",
+      "name": "HMS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 896,
+    "fields": {
+      "initials": "ACTRA PRS",
+      "name": "ALLIANCE OF CANADIAN CENEMA, TELEVISION E RADIO PERFORMERS R",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 897,
+    "fields": {
+      "initials": "PREMIER",
+      "name": "PREMIER MUZIK INTERNATIONAL CORP.",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 899,
+    "fields": {
+      "initials": "SODINPRO",
+      "name": "SOCIEDAD DOMINICANA DE PRODUCTORES holdersGRÁFICOS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 900,
+    "fields": {
+      "initials": "PAM",
+      "name": "ORGANISATION FOR COLLECTIVE MANAGEMENT OF MUSICAL AUTHORS RI",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 901,
+    "fields": {
+      "initials": "SQN",
+      "name": "SINE QUA NON COPYRIGHTS AGENCY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 903,
+    "fields": {
+      "initials": "RIGHTBACK",
+      "name": "RIGHTBACK BUSINESS E RAGHTS MANAGEMENT",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 904,
+    "fields": {
+      "initials": "ARM",
+      "name": "ALL RIGHT MUSIC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 905,
+    "fields": {
+      "initials": "AIE - COSTA RICA",
+      "name": "ASOCIACION DE GESTION COLECTIVA DE LOS INTERPRETES Y EJECUTA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 910,
+    "fields": {
+      "initials": "ARTISTI",
+      "name": "LA SOCIETE DE GESTION COLLECTIVE DE I'UNION DES ARTISTES INC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 913,
+    "fields": {
+      "initials": "FINTAGE",
+      "name": "FINTAGE ARTISTS B.V.",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 914,
+    "fields": {
+      "initials": "TSZ",
+      "name": "THREE SIX ZERO GROUP LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 915,
+    "fields": {
+      "initials": "MACC",
+      "name": "MACC GLOBAL NETWORK GMBH",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 916,
+    "fields": {
+      "initials": "IRR",
+      "name": "INTERNATIONAL ROYALTIES RESCUE UK LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 917,
+    "fields": {
+      "initials": "CPRA\/GEIDANKYO",
+      "name": "CPRA\/GEIDANKYO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 918,
+    "fields": {
+      "initials": "KOBALT",
+      "name": "KOBALT NEIGHBOURING RIGHTS LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 919,
+    "fields": {
+      "initials": "OFF LIMITS",
+      "name": "OFF LIMITS SRL UNINOMINALE",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 920,
+    "fields": {
+      "initials": "BLUEWATER",
+      "name": "BLUEWATER MUSIC CORP. C\/ BLUEWATER MUSIC SERVICES CORP.",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 923,
+    "fields": {
+      "initials": "OHR",
+      "name": "ONEHILL RECORDS B.V.",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 924,
+    "fields": {
+      "initials": "DOUBLE SIX",
+      "name": "DOUBLE SIX RIGHTS MANAGEMENT LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 931,
+    "fields": {
+      "initials": "NUOVO IMAIE",
+      "name": "NUOVO ISTITUTO MUTUALISTICO PER LA TUTELA DEI DIRITTI DEGLI ",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 932,
+    "fields": {
+      "initials": "MACA",
+      "name": "MACAU ASSOCIATION OF COMPOSERS, AUTHORS & PUBLISHERS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 934,
+    "fields": {
+      "initials": "SAP",
+      "name": "SAP",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 935,
+    "fields": {
+      "initials": "GUILD",
+      "name": "GUILD OF AUTHORS AND PERFORMERS OF UZBEKISTAN",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 936,
+    "fields": {
+      "initials": "TORTURED",
+      "name": "TORTURED ARTISTS LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 937,
+    "fields": {
+      "initials": "SOCA",
+      "name": "SOCIEDADE CABOVERDIANA DE AUTORES",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 941,
+    "fields": {
+      "initials": "AEI-GUATEMALA",
+      "name": "ASOCIACÍON DE AUTORES, EDITORES E INTÉRPRETES DE GUATEMALA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 942,
+    "fields": {
+      "initials": "AIE - PARAGUAY",
+      "name": "AIE - PARAGUAY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 945,
+    "fields": {
+      "initials": "VCPMC",
+      "name": "VIETNAM CENTER FOR PROTECTION OF MUSIC COPYRIGHT",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 947,
+    "fields": {
+      "initials": "GRAMO",
+      "name": "GRAMO",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 948,
+    "fields": {
+      "initials": "NCIP",
+      "name": "NATIONAL CENTER OF INTELLECTUAL PROPERTY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 949,
+    "fields": {
+      "initials": "PROPHON",
+      "name": "COLLECTING SOCIETY OF NEIGHBOURING RIGTHS OF PHONOGRAM PRODU",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 951,
+    "fields": {
+      "initials": "41GPR",
+      "name": "41GP RIGHTS LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 952,
+    "fields": {
+      "initials": "BSCAP",
+      "name": "BELIZEAN SOCIETY OF COMPOSERS AUTHORS & PUBLISHERS",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 953,
+    "fields": {
+      "initials": "EJI",
+      "name": "HUNGARIAN BUREAU FOR THE PROTECTION OF PERFORMERS RIGHT",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 955,
+    "fields": {
+      "initials": "CMC",
+      "name": "CAMEROON MUSIC CORPORATION",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 956,
+    "fields": {
+      "initials": "GENIKA",
+      "name": "GENIKA LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 957,
+    "fields": {
+      "initials": "RAL",
+      "name": "RIGHTS AGENCY LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 958,
+    "fields": {
+      "initials": "EAGLE-I",
+      "name": "EAGLE-I MUSIC LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 959,
+    "fields": {
+      "initials": "BMKBR",
+      "name": "BEUTLER MEINKING KERSTING BRANDT RECHTSANWAELTE",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 960,
+    "fields": {
+      "initials": "SATV\/EMI",
+      "name": "SONY ATV \/ EMI MUSIC PUBLISHING",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 962,
+    "fields": {
+      "initials": "DEFENSIVE",
+      "name": "DEFENSIVE MUSIC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 963,
+    "fields": {
+      "initials": "ASTERAS",
+      "name": "ASTERAS COLLECTIVE RIGTHS MANAGEMENT LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 964,
+    "fields": {
+      "initials": "IPRG",
+      "name": "WILIAMS BULLDOG MANAGEMENT LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 969,
+    "fields": {
+      "initials": "COSON",
+      "name": "COPYRIGHT SOCIETY OF NIGERIA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 971,
+    "fields": {
+      "initials": "REPRESENTED LIMITED",
+      "name": "REPRESENTED LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 973,
+    "fields": {
+      "initials": "AAS",
+      "name": "AZERBAIJAN AUTHORS SOCIETY",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 975,
+    "fields": {
+      "initials": "IMAGEM UK",
+      "name": "IMAGEM UK LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 976,
+    "fields": {
+      "initials": "BOOSEY & HAWKES",
+      "name": "BOOSEY & HAWKES MUSIC PUBLISHERS LTD",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 978,
+    "fields": {
+      "initials": "MROC",
+      "name": "MUSICIANS RIGHTS ORGANIZATION CANADA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 980,
+    "fields": {
+      "initials": "DOMINO",
+      "name": "DOMINO RECORIDNG COMPANY LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 981,
+    "fields": {
+      "initials": "PLAYRIGHT",
+      "name": "PLAYRIGHT S.C.R.L.",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 982,
+    "fields": {
+      "initials": "GLOBAL MASTER RIGHTS",
+      "name": "GLOBAL MASTER RIGHTS C.V.",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 983,
+    "fields": {
+      "initials": "INGROOVES MUSIC",
+      "name": "INGROOVES MUSIC PUBLISHING LLC",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 984,
+    "fields": {
+      "initials": "WAMI",
+      "name": "WAHANA MUSIK INDONESIA",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 988,
+    "fields": {
+      "initials": "MEDIA IP-I",
+      "name": "MEDIA IP RIGHTS LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 989,
+    "fields": {
+      "initials": "MEDIA IP-PF",
+      "name": "MEDIA IP RIGHTS LIMITED",
+      "is_national": false
+    }
+  },
+  {
+    "model": "holders.Society",
+    "pk": 992,
+    "fields": {
+      "initials": "RE SOUND",
+      "name": "RE SOUND",
+      "is_national": false
+    }
+  }
+]
