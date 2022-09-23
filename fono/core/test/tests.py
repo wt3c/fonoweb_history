@@ -5,6 +5,7 @@ from django.shortcuts import resolve_url as r
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import AuthenticationForm
 
+
 class HomeTest(TestCase):
     def setUp(self):
         # User = get_user_model()
@@ -12,7 +13,7 @@ class HomeTest(TestCase):
             username="blackthorne@gmail.com",
             email="blackthorne@gmail.com",
             password="Mariko-san",
-            first_name="John", # Shogun --James Clavell
+            first_name="John",  # Shogun --James Clavell
             last_name="BlackThorne"
         )
         # self.client.login(username='blackthorne@gmail.com', password="Mariko-san")
