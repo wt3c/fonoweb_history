@@ -8,6 +8,7 @@ dj-database-url
 dj-static
 python-decouple
 pytest
+pytest-django
 PyYAML
 pytz
 static3
