@@ -1,9 +1,6 @@
 from django.test import TestCase
-from django.contrib.auth import get_user
 from django.shortcuts import resolve_url as r
-# from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import AuthenticationForm
 
 
 class HomeTest(TestCase):
@@ -39,11 +36,3 @@ class HomeTest(TestCase):
         data = dict(username="blackthorne@gmail.com", password="Mariko-san")
         resp = self.client.post(r('login'), data)
         self.assertRedirects(resp, r('home'))
-
-    # def test_logout(self):
-    #     """The User must be AnonymousUser"""
-    #     resp = self.client.get('/logout/')
-    #     expected = 'AnonymousUser'
-    #     user = get_user(resp)
-    #     print(user, '************************')
-    #     self.assertEqual(expected, user)
