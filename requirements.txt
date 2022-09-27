@@ -6,6 +6,7 @@ django-widget-tweaks
 django-test-without-migrations
 dj-database-url
 dj-static
+model_mommy
 python-decouple
 pytest
 pytest-django
