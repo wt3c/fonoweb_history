@@ -31,11 +31,12 @@ class HolderNewTest(TestCase):
 
 
 def test():
-    teste
-        
-ded test2(self):
-    
-    hdghgdhgd
+    # teste
+    pass
+
+
+def test2(self):
+    # hdghgdhgd
     print("tetse")
 #
 
@@ -43,5 +44,5 @@ ded test2(self):
 #
 #
 #
-#
+
 # TESTE
