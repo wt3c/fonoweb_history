@@ -28,21 +28,3 @@ class HolderNewTest(TestCase):
         """Test if exist in the Get Form"""
         form = self.resp.context['form']
         self.assertEqual(form, HolderForm)
-
-
-def test():
-    # teste
-    pass
-
-
-def test2(self):
-    # hdghgdhgd
-    print("tetse")
-#
-
-#
-#
-#
-#
-
-# TESTE 3
