@@ -86,3 +86,5 @@ webencodings==0.5.1
 widgetsnbextension==3.5.2
 wrapt==1.13.3
 model-mommy
+django-debug-toolbar
+django-browser-reload

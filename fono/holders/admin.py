@@ -1,13 +1,23 @@
 from django.contrib import admin
+
+from fono.holders.models import Contact
 from fono.holders.models import Holder
 from fono.holders.models import Pseudonym
+from fono.holders.models import Society
 
-class PseudonymInLine(admin.TabularInline):
-    model= Pseudonym
+
+class ContactInLine(admin.TabularInline):
+    model = Contact
     extra = 1
 
+
+class PseudonymInLine(admin.TabularInline):
+    model = Pseudonym
+    extra = 1
+
+
 class HolderModelAdmin(admin.ModelAdmin):
-    inlines = [PseudonymInLine]
+    inlines = [PseudonymInLine, ContactInLine]
 
     list_display = ('cod_ecad', 'name', 'type_doc', 'cpf', 'cnpj', 'ifpi', 'radical_ifpi', 'is_publisher',
                     'is_record_producer', 'is_interpreter', 'is_author', 'is_musician', 'note')
@@ -18,3 +28,5 @@ class HolderModelAdmin(admin.ModelAdmin):
 
 admin.site.register(Holder, HolderModelAdmin)
 admin.site.register(Pseudonym)
+admin.site.register(Society)
+admin.site.register(Contact)

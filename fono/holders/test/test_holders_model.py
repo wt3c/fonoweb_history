@@ -3,9 +3,8 @@ from django.contrib.auth.models import User
 from django.shortcuts import resolve_url as r
 from model_mommy import mommy
 
-from fono.holders.forms import HolderForm
 from fono.holders.models import Holder, Pseudonym
-
+from fono.holders.models import Society
 
 class HolderModelTest(TestCase):
     def setUp(self):
@@ -14,20 +13,19 @@ class HolderModelTest(TestCase):
     def test_create_holder(self):
         self.assertTrue(Holder.objects.exists())
 
-
 class HolderUserModelTest(TestCase):
     """Test the M-One relationship between the Holder and User tables """
 
     def setUp(self) -> None:
         self.user1 = mommy.make(User, pk=1)
-        self.user2 = mommy.make(User, pk=1)
+        self.user2 = mommy.make(User, pk=2)
         self.holder1 = mommy.make(Holder, pk=1, owner=self.user1)
         self.holder2 = mommy.make(Holder, pk=1, owner=self.user2)
 
     def test_create_holder_with_owner(self):
         self.assertTrue(Holder.objects.exists())
 
-    # Acabei não presindo, mantve como referencia
+    # Acabei não utilizando, mantive como referencia
     # def make_valited_form(self, **kwargs):
     #     user = self.user1
     #     valid = dict(
@@ -47,10 +45,18 @@ class HolderUserModelTest(TestCase):
             name='Tit_valid',
             owner=user
         )
-        expected = "/login/?next=%2Ftitular"
+        self.user = User.objects.create_user(
+            username="blackthorne@gmail.com",
+            email="blackthorne@gmail.com",
+            password="Mariko-san",
+            first_name="John",  # Shogun --James Clavell
+            last_name="BlackThorne"
+        )
+        # self.client.login(username='blackthorne@gmail.com', password="Mariko-san")
+        self.client.force_login(self.user)
         resp = self.client.post(r('holder:new'), valid)
-        self.assertRedirects(resp, expected)
 
+        self.assertEqual(200, resp.status_code)
 
 class HolderPseudoModelTest(TestCase):
     """Test the M-One relationship between the Holder and Pseudonym tables"""
@@ -76,3 +82,14 @@ class HolderPseudoModelTest(TestCase):
         expected = "/login/?next=%2Ftitular"
         resp = self.client.post(r('holder:new'), valid)
         self.assertRedirects(resp, expected)
+
+class HolderSocietyTest(TestCase):
+    """Test the M-One relationship between the Holder and Society tables"""
+
+    def setUp(self) -> None:
+        self.user1 = mommy.make(User, pk=1)
+        self.soc = mommy.make(Society, pk=1)
+        self.holder = mommy.make(Holder, pk=1, owner=self.user1, society=self.soc)
+
+    def test_create_holder_with_soc(self):
+        self.assertTrue(Holder.objects.exists())
